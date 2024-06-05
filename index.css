@@ -1,0 +1,140 @@
+## Hot
+
+```
+Hot
+
+Hot freshly ground black coffee or a cup of exquisite tea?
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One';
+    min-height: 100vh;
+    position: relative;
+}
+
+h1,
+a {
+    font-family: 'Spirax';
+}
+
+header {
+    background-color: rgb(31 1 28 / 66%);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+}
+
+nav {
+    min-width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+nav a:hover {
+    color: darkred;
+}
+
+.wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper-hot {
+    background-image: url('./assets/hot.jpg');
+}
+
+.wrapper-juicy {
+    background-image: url('./assets/juicy.jpg');
+}
+
+.wrapper-cosy {
+    background-image: url('./assets/cosy.jpg');
+}
+
+.main-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 70vw;
+    gap: 2rem;
+}
+
+.main-content h1 {
+    text-align: center;
+    color: darkred;
+    font-size: 5rem;
+}
+
+.red-label {
+    background-color: rgba(139, 0, 0, 0.772);
+    padding: 0 2rem;
+    width: 70%;
+}
+
+.float-right {
+    align-self: flex-end;
+}
+
+.red-label p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.price-list {
+    background-color: rgba(0, 0, 0, 0.772);
+    padding: 1rem 2rem;
+    width: 70%;
+    align-self: center;
+}
+
+.price-list section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-list section p {
+    color: white;
+    margin: 0;
+}
+
+.red-divider {
+    background-color: darkred;
+    height: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 1.2rem;
+    }
+    .main-content {
+        gap: 1rem;
+    }
+    .main-content h1 {
+        margin: 0;
+    }
+    .red-label {
+        align-self: center;
+    }
+    .float-right {
+        display: none;
+    }
+  }
